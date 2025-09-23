@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: transparent;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+.nav-links .btn {
+  background: #e2b007;
+  padding: 8px 16px;
+  border-radius: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: url('./Images/image.png')
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: flex-start; /* align to left */
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content {
+  border: 5px solid #e2b007;
+  padding: 40px;
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none; /* (I’ll add a mobile menu later) */
+  }
+
+  .hero {
+    justify-content: center; /* center on mobile */
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
