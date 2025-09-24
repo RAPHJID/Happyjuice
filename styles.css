@@ -133,17 +133,12 @@ body {
 }
 .about-content h2,
 .services h2 {
-  color: #ffcc00;
+  color: #ffcc00; /* gold highlight */
 }
 
 .about-content p {
   margin-bottom: 20px;
   line-height: 1.6;
-}
-
-.about-content p,
-.services p {
-  color: #f1f1f1;
 }
 
 .about-buttons {
@@ -177,6 +172,88 @@ body {
 .btn.secondary:hover {
   background: #333;
 }
+
+/* services */
+/* Services Section */
+.services {
+  background: #3b2626; 
+  color: #fff;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 50px;
+  color: #ffcc00;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 🔑 Exactly 2 per row */
+  gap: 40px;
+  max-width: 1000px; /* keeps it neat, not stretched */
+  margin: 0 auto;
+}
+
+.service-card {
+  background: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.service-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #ffcc00;
+}
+
+.service-card p {
+  font-size: 0.95rem;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* Big Image Section */
+.big-image {
+  width: 100%;
+  height: 70vh;
+  background: url('./Images/big-image.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+
+/* Responsive Services Section */
+@media (max-width: 768px) {
+  .service-cards {
+    grid-template-columns: 1fr; /* stack on smaller screens */
+    gap: 30px;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 
 /* Responsive About Section */
 @media (max-width: 768px) {
