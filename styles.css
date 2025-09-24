@@ -388,6 +388,59 @@ body {
   color: #ffcc00;
 }
 
+/* Our Clients Section */
+.clients {
+  background: #3b2626;
+  padding: 70px 5%;
+  text-align: center;
+  color: #fff;
+  min-height: 320px; /* increased height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 2px solid #ffcc00;   /* gold top border */
+  border-bottom: 2px solid #ffcc00; /* gold bottom border */
+}
+
+.clients h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: space-between; /* stretch from end to end */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.clients-logos img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.clients-logos img:hover {
+  transform: scale(1.1); /* little zoom effect on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .clients-logos {
+    justify-content: center; /* center on smaller screens */
+    gap: 25px;
+  }
+
+  .clients-logos img {
+    width: 90px;
+  }
+}
+
+
+
 
 /* Responsive Feedback Section */
 @media (max-width: 1024px) {
