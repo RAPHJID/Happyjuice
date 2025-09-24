@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Poppins', sans-serif;
   color: #fff;
@@ -399,7 +401,7 @@ body {
   flex-direction: column;
   justify-content: center;
   border-top: 2px solid #ffcc00;   /* gold top border */
-  border-bottom: 2px solid #ffcc00; /* gold bottom border */
+  /* border-bottom: 2px solid #ffcc00; gold bottom border */
 }
 
 .clients h2 {
@@ -426,6 +428,45 @@ body {
 .clients-logos img:hover {
   transform: scale(1.1); /* little zoom effect on hover */
 }
+
+/* Booking Section */
+.booking {
+  background: #656060;
+  color: #fff;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.booking h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.booking-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.booking-links a {
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.booking-links a:hover {
+  background: #3b2626;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
