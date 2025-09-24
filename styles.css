@@ -232,8 +232,72 @@ body {
 .big-image {
   width: 100%;
   height: 70vh;
-  background: url('./Images/big-image.jpg') no-repeat center center/cover;
+  background: url('./Images/pub.png') no-repeat center center/cover;
   position: relative;
+}
+
+/* FAQ Section */
+.faq {
+  background: #3b2626;
+  color: #fff;
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+}
+
+.faq-question {
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  padding-right: 20px;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+.faq-question::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+.faq-item.active .faq-question::after {
+  content: '-';
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-intro {
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  font-size: 1rem;
+  color: #f1f1f1;
+  line-height: 1.6;
+  text-align: center;
 }
 
 
